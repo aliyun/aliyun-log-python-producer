@@ -5,6 +5,7 @@ edition = "2021"
 publish = false
 description = "Python bindings for the Alibaba Cloud SLS Rust producer"
 license = "MIT"
+repository = "https://github.com/aliyun/aliyun-log-python-producer"
 
 [lib]
 name = "_native"
@@ -16,8 +17,8 @@ abi3 = ["pyo3/abi3-py38"]
 vendored-openssl = ["dep:openssl"]
 
 [dependencies]
-aliyun-log-producer = { path = "../../producer" }
-aliyun-log-rust-sdk = { path = "../../client" }
+aliyun-log-producer = "=0.1.2"
+aliyun-log-rust-sdk = "=0.3.3"
 pyo3 = "0.29.2"
 
 # Release Linux wheels bundle OpenSSL instead of depending on the build host's

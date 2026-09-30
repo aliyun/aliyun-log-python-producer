@@ -1,6 +1,11 @@
-.venv/
+/target/
+/.venv/
+/dist/
+/wheelhouse/
+*.egg-info/
 __pycache__/
 .pytest_cache/
-*.so
-*.pyd
-dist/
+*.py[cod]
+.env
+.env.*
+.DS_Store

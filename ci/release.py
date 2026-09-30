@@ -20,7 +20,7 @@ from platforms import ABI3_TAG, build_groups, build_matrices, status_targets
 
 
 def version():
-    with Path("bindings/python/Cargo.toml").open("rb") as source:
+    with Path("Cargo.toml").open("rb") as source:
         return Version(tomllib.load(source)["package"]["version"])
 
 
@@ -34,7 +34,7 @@ def prepare():
         if not re.fullmatch(r"python-v[0-9A-Za-z.+-]+", tag):
             raise ValueError("use a python-v<VERSION> tag")
         if Version(tag.removeprefix("python-v")) != package_version:
-            raise ValueError("release tag must match bindings/python/Cargo.toml; no automatic version rewrite")
+            raise ValueError("release tag must match Cargo.toml; no automatic version rewrite")
         existing = subprocess.run(
             ["git", "rev-parse", "--verify", "--quiet", "refs/tags/{}^{{commit}}".format(tag)],
             capture_output=True, text=True,

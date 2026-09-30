@@ -33,8 +33,8 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/aliyun/aliyun-log-rust-sdk/tree/master/bindings/python"
-Issues = "https://github.com/aliyun/aliyun-log-rust-sdk/issues"
+Repository = "https://github.com/aliyun/aliyun-log-python-producer"
+Issues = "https://github.com/aliyun/aliyun-log-python-producer/issues"
 
 [project.optional-dependencies]
 test = ["packaging>=23", "pytest>=8", "pytest-timeout>=2", "zstandard>=0.23", "lz4>=4"]

@@ -145,7 +145,7 @@ class BuildGroupsTest(unittest.TestCase):
         self.assertEqual({group["id"] for group in configured}, {
             "manylinux_2_28-x86_64-graalpy-3.13", "manylinux_2_28-aarch64-graalpy-3.13",
         })
-        root = Path(__file__).resolve().parents[3]
+        root = Path(__file__).resolve().parents[1]
         for group in configured:
             config = dict(line.split("=", 1) for line in (root / group["pyo3_config"]).read_text().splitlines())
             self.assertEqual(config, {
