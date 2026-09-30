@@ -31,9 +31,9 @@ def prepare():
                         if os.environ.get("GITHUB_EVENT_NAME") == "push"
                         and os.environ.get("GITHUB_REF_TYPE") == "tag" else "")
     if tag:
-        if not re.fullmatch(r"python-v[0-9A-Za-z.+-]+", tag):
-            raise ValueError("use a python-v<VERSION> tag")
-        if Version(tag.removeprefix("python-v")) != package_version:
+        if not re.fullmatch(r"v[0-9A-Za-z.+-]+", tag):
+            raise ValueError("use a v<VERSION> tag")
+        if Version(tag.removeprefix("v")) != package_version:
             raise ValueError("release tag must match Cargo.toml; no automatic version rewrite")
         existing = subprocess.run(
             ["git", "rev-parse", "--verify", "--quiet", "refs/tags/{}^{{commit}}".format(tag)],

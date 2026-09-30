@@ -200,6 +200,48 @@ class BuildGroupsTest(unittest.TestCase):
         self.assertTrue(all("--managed-python" in call.args[0] and "--system" in call.args[0] for call in find.call_args_list))
 
 
+class ReleaseTagTest(unittest.TestCase):
+    def prepare_with_tag(self, tag, package_version="0.1.2", draft=False):
+        from packaging.version import Version
+        from subprocess import CompletedProcess
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "outputs"
+            environment = {
+                "GITHUB_OUTPUT": str(output),
+                "DRAFT_VERSION": tag if draft else "",
+                "GITHUB_EVENT_NAME": "workflow_dispatch" if draft else "push",
+                "GITHUB_REF_TYPE": "tag",
+                "GITHUB_REF_NAME": tag,
+            }
+            with patch.dict("os.environ", environment), \
+                    patch("release.version", return_value=Version(package_version)), \
+                    patch("release.subprocess.run", return_value=CompletedProcess([], 1, stdout="")), \
+                    patch("release.subprocess.check_output", return_value="head\n"):
+                prepare()
+            return dict(line.split("=", 1) for line in output.read_text().splitlines())
+
+    def test_plain_version_tag_publishes(self):
+        outputs = self.prepare_with_tag("v0.1.2")
+        self.assertEqual(outputs["tag"], "v0.1.2")
+        self.assertEqual(outputs["version"], "0.1.2")
+        self.assertEqual(outputs["draft"], "false")
+
+    def test_prerelease_draft_normalizes_version(self):
+        outputs = self.prepare_with_tag("v0.1.3-beta1", "0.1.3-beta1", draft=True)
+        self.assertEqual(outputs["tag"], "v0.1.3-beta1")
+        self.assertEqual(outputs["version"], "0.1.3b1")
+        self.assertEqual(outputs["draft"], "true")
+        self.assertEqual(outputs["prerelease"], "true")
+
+    def test_old_prefix_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "use a v<VERSION> tag"):
+            self.prepare_with_tag("python-v0.1.2")
+
+    def test_version_mismatch_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "must match Cargo.toml"):
+            self.prepare_with_tag("v0.1.3")
+
+
 class GroupValidationTest(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()

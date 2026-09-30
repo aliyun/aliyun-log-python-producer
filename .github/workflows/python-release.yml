@@ -2,11 +2,11 @@ name: Python Release
 
 on:
   push:
-    tags: ["python-v*"]
+    tags: ["v*"]
   workflow_dispatch:
     inputs:
       draft_version:
-        description: "Draft tag matching Cargo.toml, e.g. python-v0.1.0-beta1; empty builds artifacts only"
+        description: "Draft tag matching Cargo.toml, e.g. v0.1.0-beta1; empty builds artifacts only"
         required: false
         default: ""
         type: string
