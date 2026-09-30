@@ -1,0 +1,369 @@
+{
+  "run_id": 36672027527,
+  "run_attempt": 1,
+  "url": "https://github.com/aliyun/aliyun-log-python-producer/actions/runs/36672027527",
+  "commit": "16a2f77f17558fd60003a99954ee8f79bac8362e",
+  "platforms": {
+    "manylinux2014-x86_64": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-x86_64-abi3"
+      ]
+    },
+    "manylinux2014-x86_64-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-x86_64-native"
+      ]
+    },
+    "manylinux2014-x86_64-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-x86_64-free-threaded"
+      ]
+    },
+    "manylinux2014-x86_64-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-x86_64-pypy"
+      ]
+    },
+    "manylinux2014-x86_64-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-x86_64-graalpy-3.12"
+      ]
+    },
+    "manylinux_2_28-x86_64-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux_2_28-x86_64-graalpy-3.13"
+      ]
+    },
+    "manylinux2014-aarch64": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-aarch64-abi3"
+      ]
+    },
+    "manylinux2014-aarch64-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-aarch64-native"
+      ]
+    },
+    "manylinux2014-aarch64-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-aarch64-free-threaded"
+      ]
+    },
+    "manylinux2014-aarch64-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-aarch64-graalpy-3.12"
+      ]
+    },
+    "manylinux_2_28-aarch64-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux_2_28-aarch64-graalpy-3.13"
+      ]
+    },
+    "manylinux2014-i686": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-i686-abi3"
+      ]
+    },
+    "manylinux2014-i686-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-i686-native"
+      ]
+    },
+    "manylinux2014-i686-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-i686-free-threaded"
+      ]
+    },
+    "manylinux2014-i686-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-i686-pypy"
+      ]
+    },
+    "manylinux2014-ppc64le": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-ppc64le-abi3"
+      ]
+    },
+    "manylinux2014-ppc64le-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-ppc64le-native"
+      ]
+    },
+    "manylinux2014-ppc64le-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-ppc64le-free-threaded"
+      ]
+    },
+    "manylinux2014-s390x": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-s390x-abi3"
+      ]
+    },
+    "manylinux2014-s390x-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-s390x-native"
+      ]
+    },
+    "manylinux2014-s390x-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-s390x-free-threaded"
+      ]
+    },
+    "manylinux2014-armv7l": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-armv7l-abi3"
+      ]
+    },
+    "manylinux2014-armv7l-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-armv7l-native"
+      ]
+    },
+    "manylinux2014-armv7l-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux2014-armv7l-free-threaded"
+      ]
+    },
+    "manylinux_2_31-riscv64": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux_2_31-riscv64-abi3"
+      ]
+    },
+    "manylinux_2_31-riscv64-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux_2_31-riscv64-native"
+      ]
+    },
+    "manylinux_2_31-riscv64-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / manylinux_2_31-riscv64-free-threaded"
+      ]
+    },
+    "musllinux_1_1-x86_64": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-x86_64-abi3"
+      ]
+    },
+    "musllinux_1_1-x86_64-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-x86_64-native"
+      ]
+    },
+    "musllinux_1_1-x86_64-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-x86_64-free-threaded"
+      ]
+    },
+    "musllinux_1_1-x86_64-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-x86_64-pypy"
+      ]
+    },
+    "musllinux_1_1-aarch64": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-aarch64-abi3"
+      ]
+    },
+    "musllinux_1_1-aarch64-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-aarch64-native"
+      ]
+    },
+    "musllinux_1_1-aarch64-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-aarch64-free-threaded"
+      ]
+    },
+    "musllinux_1_1-aarch64-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-aarch64-pypy"
+      ]
+    },
+    "musllinux_1_1-i686": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-i686-abi3"
+      ]
+    },
+    "musllinux_1_1-armv7l": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-armv7l-abi3"
+      ]
+    },
+    "musllinux_1_1-armv7l-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-armv7l-native"
+      ]
+    },
+    "musllinux_1_1-armv7l-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-armv7l-free-threaded"
+      ]
+    },
+    "musllinux_1_1-armv7l-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / musllinux_1_1-armv7l-pypy"
+      ]
+    },
+    "x86_64-apple-darwin": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-apple-darwin-abi3"
+      ]
+    },
+    "x86_64-apple-darwin-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-apple-darwin-native"
+      ]
+    },
+    "x86_64-apple-darwin-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-apple-darwin-free-threaded"
+      ]
+    },
+    "x86_64-apple-darwin-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-apple-darwin-pypy"
+      ]
+    },
+    "x86_64-apple-darwin-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-apple-darwin-graalpy-3.12"
+      ]
+    },
+    "aarch64-apple-darwin": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-apple-darwin-abi3"
+      ]
+    },
+    "aarch64-apple-darwin-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-apple-darwin-native"
+      ]
+    },
+    "aarch64-apple-darwin-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-apple-darwin-free-threaded"
+      ]
+    },
+    "aarch64-apple-darwin-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-apple-darwin-pypy"
+      ]
+    },
+    "aarch64-apple-darwin-graalpy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-apple-darwin-graalpy-3.12",
+        "wheel / aarch64-apple-darwin-graalpy-3.13"
+      ]
+    },
+    "x86_64-pc-windows-msvc": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-pc-windows-msvc-abi3"
+      ]
+    },
+    "x86_64-pc-windows-msvc-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-pc-windows-msvc-native"
+      ]
+    },
+    "x86_64-pc-windows-msvc-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-pc-windows-msvc-free-threaded"
+      ]
+    },
+    "x86_64-pc-windows-msvc-pypy": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / x86_64-pc-windows-msvc-pypy"
+      ]
+    },
+    "i686-pc-windows-msvc": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / i686-pc-windows-msvc-abi3"
+      ]
+    },
+    "i686-pc-windows-msvc-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / i686-pc-windows-msvc-native"
+      ]
+    },
+    "i686-pc-windows-msvc-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / i686-pc-windows-msvc-free-threaded"
+      ]
+    },
+    "aarch64-pc-windows-msvc": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-pc-windows-msvc-abi3"
+      ]
+    },
+    "aarch64-pc-windows-msvc-native": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-pc-windows-msvc-native"
+      ]
+    },
+    "aarch64-pc-windows-msvc-free-threaded": {
+      "status": "passing",
+      "expected_jobs": [
+        "wheel / aarch64-pc-windows-msvc-free-threaded"
+      ]
+    }
+  }
+}
